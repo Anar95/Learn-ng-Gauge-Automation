@@ -67,12 +67,20 @@ public class StepImplementation {
 
 
   @Step("Type <text> into input with XPath <xpath> and  press Enter")
-  public void typeIntoInputWithXPathAndPressEnter(String xpath, String text) {
+  public void typeIntoInputWithXPathAndPressEnter(String text, String xpath) {
       WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     element.clear();
     element.sendKeys(text);
     element.sendKeys(Keys.ENTER);
   }
+
+    @Step("Type <text> into input with XPath <xpath> and  press Tab")
+    public void typeIntoInputWithXPathAndPressTab(String text, String xpath) {
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+        element.clear();
+        element.sendKeys(text);
+        element.sendKeys(Keys.TAB);
+    }
 
     @Step("Clear input with XPath <xpath> and  press Backspace")
     public void clearInputWithXPathAndPressBackspace(String xpath) {
@@ -82,7 +90,6 @@ public class StepImplementation {
        // for (int i = 0; i < existingText.length(); i++) { element.sendKeys(Keys.BACK_SPACE);}
         element.sendKeys(Keys.BACK_SPACE);
     }
-
 
 
 

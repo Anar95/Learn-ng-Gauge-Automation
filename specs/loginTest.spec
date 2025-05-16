@@ -1,7 +1,18 @@
-# Example Specification
+# Bazar Store Login Test
 
-## BazarStore Login Scenario
+
+## BazarStore Login Scenario Pozitive
 
 * Open browser and go to "https://bazarstore.az/"
-* Click element with XPath "//a[class='test']"
-* Wait for element Xpath  "//a[class='test']" to be visible
+* Wait for element Xpath  "//a[@href='/account']" to be visible
+* Click element with XPath "//a[@href='/account']"
+* Type "anarabbas458@gmail.com" into input with XPath "//input[@id='CustomerEmail']" and  press Tab
+* Type "Test1234Test" into input with XPath "//input[@id='CustomerPassword']" and  press Enter
+* Wait for element Xpath  "//p[contains(text(), 'Anar Abbas')]" to be visible
+* Verify element with Xpath "//p[contains(text(), 'Anar Abbas')]" contains text "Anar Abbas"
+
+
+## Dashboard Sol Menyudan Meyve Menyusuna Acılan Menyudan Gediş
+
+* Open browser and go to "https://bazarstore.az/"
+* Hover mouse over element with Partial Link Text "Meyvə, Tərəvəz"
