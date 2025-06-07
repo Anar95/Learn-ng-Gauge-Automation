@@ -1,0 +1,25 @@
+{
+
+
+  "Account link": {
+    "locatorType": "XPATH",
+    "locatorValue": "//a[@href='/account']"
+  },
+
+  "Email text": {
+    "locatorType": "XPATH",
+    "locatorValue": "//input[@id='CustomerEmail']"
+  },
+
+  "Password text": {
+    "locatorType": "XPATH",
+    "locatorValue": "//input[@id='CustomerPassword']"
+  },
+
+  "User name label": {
+    "locatorType": "XPATH",
+    "locatorValue": "//p[contains(text(), 'Anar Abbas')]"
+  }
+}
+
+

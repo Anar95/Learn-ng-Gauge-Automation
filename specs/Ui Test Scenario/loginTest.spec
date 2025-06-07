@@ -12,7 +12,13 @@
 * Verify element with Xpath "//p[contains(text(), 'Anar Abbas')]" contains text "Anar Abbas"
 
 
-## Dashboard Sol Menyudan Meyve Menyusuna Acılan Menyudan Gediş
+## BazarStore Login Scenario with Json
 
-* Open browser and go to "https://bazarstore.az/"
-* Hover mouse over element with Partial Link Text "Meyvə, Tərəvəz"
+* Brazueri aç və keçid et "https://bazarstore.az/"
+* "Account link" gorsensin deye maksimum "10" saniye gozle
+* JSON faylındakı "Account link" elementine klik et
+* "Email text" elementine "anarabbas458@gmail.com" yaz ve Tab duymesine bas
+* "Password text" elementine "Test1234Test" yaz ve Enter duymesine bas
+* "User name label" gorsensin deye maksimum "10" saniye gozle
+* Element "User name label" icinde "Anar Abbas" yazisi var
+* Brauze bagla
